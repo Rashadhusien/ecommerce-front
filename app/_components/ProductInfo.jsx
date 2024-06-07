@@ -4,9 +4,11 @@ import SkeletonProductInfo from "./skeletonProductInfo";
 import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 
-import cartApi from "../_utils/cartApi";
+// import cartApi from "../_utils/cartApi";
+import cartApi from "/app/_utils/cartApi.js";
 import { useContext } from "react";
-import { CartContext } from "../_context/CartContext";
+// import { CartContext } from "../_context/CartContext";
+import { CartContext } from "/app/_context/CartContext.js";
 
 function ProductInfo({ product }) {
   const { cart, setCart } = useContext(CartContext);

@@ -4,12 +4,16 @@ import {
   useElements,
 } from "@stripe/react-stripe-js";
 import { useContext, useState } from "react";
-import { CartContext } from "../_context/CartContext";
+// import { CartContext } from "../_context/CartContext";
+import { CartContext } from "/app/_context/CartContext.js";
 import { useUser } from "@clerk/nextjs";
 
-import OrderApi from "../_utils/OrderApis";
+// import OrderApi from "../_utils/OrderApis";
 
-import cartApi from "../_utils/cartApi";
+import OrderApis from "/app/_utils/OrderApis.js";
+
+// import cartApi from "../_utils/cartApi";
+import cartApi from "/app/_utils/cartApi.js";
 
 const CheckoutForm = ({ amount }) => {
   const { cart, setCart } = useContext(CartContext);
@@ -89,7 +93,7 @@ const CheckoutForm = ({ amount }) => {
       },
     };
 
-    OrderApi.createOrder(data).then((res) => {
+    OrderApis.createOrder(data).then((res) => {
       if (res) {
         cart.forEach((el) => {
           cartApi.deleteCartItem(el?.id).then((result) => {});

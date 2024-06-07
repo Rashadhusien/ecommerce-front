@@ -2,12 +2,11 @@
 import { UserButton, useUser } from "@clerk/nextjs";
 import { ShoppingCart } from "lucide-react";
 import React, { useContext, useEffect, useState } from "react";
-import { CartContext } from "../_context/CartContext";
-// import Image from "next/image";
-import cartApi from "../_utils/cartApi";
-// import ProductApi from "../_utils/ProductApi";
+// import { CartContext } from "../_context/CartContext";
+import { CartContext } from "/app/_context/CartContext.js";
+// import cartApi from "../_utils/cartApi";
+import cartApi from "/app/_utils/cartApi.js";
 import Cart from "./Cart";
-
 import Link from "next/link";
 
 function Header() {

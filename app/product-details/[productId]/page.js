@@ -1,10 +1,15 @@
 "use client";
-import BreadCrumb from "../../_components/BreadCrumb";
-import ProductApi from "../../_utils/ProductApi";
+// import BreadCrumb from "../../_components/BreadCrumb";
+import BreadCrumb from "/app/_components/BreadCrumb.jsx";
+// import ProductApi from "../../_utils/ProductApi";
+import ProductApi from "/app/_utils/ProductApi";
 import { useEffect, useState } from "react";
-import ProductBanner from "../../_components/ProductBanner";
-import ProductInfo from "../../_components/ProductInfo";
-import ProductList from "../../_components/ProductList";
+// import ProductBanner from "../../_components/ProductBanner";
+import ProductBanner from "/app/_components/ProductBanner.jsx";
+// import ProductInfo from "../../_components/ProductInfo";
+import ProductInfo from "/app/_components/ProductInfo.jsx";
+// import ProductList from "../../_components/ProductList";
+import ProductList from "/app/_components/ProductList.jsx";
 import { usePathname } from "next/navigation";
 
 function ProductDetails({ params }) {

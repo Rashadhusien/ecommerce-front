@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
-import { CartContext } from "../_context/CartContext";
+// import { CartContext } from "../_context/CartContext";
+import { CartContext } from "/app/_context/CartContext.js";
 import Link from "next/link";
 
 function Cart({ setOpenCart }) {

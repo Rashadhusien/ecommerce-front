@@ -1,9 +1,13 @@
 "use client";
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import Header from "./_components/Header";
-import Footer from "./_components/Footer";
-import { CartContext } from "./_context/CartContext";
+// import Header from "./_components/Header";
+import Header from "/app/_components/Header.jsx";
+
+// import Footer from "./_components/Footer";
+import Footer from "/app/_components/Footer.jsx";
+// import { CartContext } from "./_context/CartContext";
+import { CartContext } from "/app/_context/CartContext";
 import { ClerkProvider } from "@clerk/nextjs";
 import { useState } from "react";
 

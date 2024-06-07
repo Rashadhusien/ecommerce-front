@@ -1,7 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
-import ProductApi from "../_utils/ProductApi";
-import ProductList from "../_components/ProductList";
+// import ProductApi from "../_utils/ProductApi";
+import ProductApi from "/app/_utils/ProductApi";
+// import ProductList from "../_components/ProductList";
+import ProductList from "/app/_components/ProductList";
 
 function ProductSection() {
   const [productList, setProductList] = useState([]);

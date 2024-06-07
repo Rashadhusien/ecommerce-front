@@ -1,8 +1,11 @@
 "use client";
 import React, { useContext } from "react";
-import { CartContext } from "../_context/CartContext";
-import cartApi from "../_utils/cartApi";
-import AlertNote from "../_components/AlertNote";
+// import { CartContext } from "../_context/CartContext";
+import { CartContext } from "/app/_context/CartContext.js";
+// import cartApi from "../_utils/cartApi";
+import cartApi from "/app/_utils/cartApi.js";
+// import AlertNote from "../_components/AlertNote";
+import AlertNote from "/app/_components/AlertNote";
 import { useRouter } from "next/navigation";
 
 function Cart() {

@@ -1,5 +1,7 @@
-import Hero from "./_components/Hero";
-import ProductSection from "./courses/page";
+// import Hero from "./_components/Hero";
+import Hero from "/app/_components/Hero.jsx";
+// import ProductSection from "./courses/page";
+import ProductSection from "/app/courses/page.jsx";
 
 function Home() {
   return (
